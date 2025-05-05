@@ -1,0 +1,32 @@
+name: Build and release
+
+on:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+
+  message:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/github-script@v6
+      id: get_pr_data
+      with:
+        script: |
+            return (
+              await github.rest.repos.listPullRequestsAssociatedWithCommit({
+                commit_sha: context.sha,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+              })
+            ).data[0];
+    - name: Discord Webhook Action
+      uses: tsickert/discord-webhook@v7.0.0
+      with:
+        webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        embed-title: "🎉 New update on `master` branch: ${{ fromJson(steps.get_pr_data.outputs.result).title }}"
+        embed-description: "${{ fromJson(steps.get_pr_data.outputs.result).body }}"
+        embed-url: "${{ fromJson(steps.get_pr_data.outputs.result).html_url }}"
