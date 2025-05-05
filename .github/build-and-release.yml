@@ -2,7 +2,7 @@ name: Build and release
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: read
