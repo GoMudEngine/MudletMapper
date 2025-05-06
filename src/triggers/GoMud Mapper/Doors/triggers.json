@@ -1,0 +1,336 @@
+[
+       {
+              "name": "Closing doors",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "1",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "1",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You open the door to the",
+                            "type": "startOfLine"
+                     }
+              ],
+              "script": "",
+              "children": [
+                     {
+                            "name": "Lack of piety",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "^You try to open the door to the (\\w+) but find it slams closed in your face, symbolic of your lack of piety\\.$",
+                                          "type": "regex"
+                                   }
+                            ],
+                            "script": ""
+                     },
+                     {
+                            "name": "Slam Shut",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "1",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "The door slams shut!",
+                                          "type": "exactMatch"
+                                   }
+                            ],
+                            "script": ""
+                     },
+                     {
+                            "name": "Denied entry",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "The door suddenly slams shut, denying you entry.",
+                                          "type": "exactMatch"
+                                   }
+                            ],
+                            "script": ""
+                     },
+                     {
+                            "name": "CIJ",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "A section of the door slides aside, and a rubber-gloved fist on a spring pops out and punches you in the nose!",
+                                          "type": "exactMatch"
+                                   }
+                            ],
+                            "script": ""
+                     },
+                     {
+                            "name": "Springs back",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "The door budges, and then springs immediately back into place.",
+                                          "type": "exactMatch"
+                                   }
+                            ],
+                            "script": ""
+                     },
+                     {
+                            "name": "Bolted",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "^The door to the (\\w+) is closed forcefully from the other side and the sound of a bolt being slammed home makes your lack of admittance clear\\.$",
+                                          "type": "regex"
+                                   }
+                            ],
+                            "script": ""
+                     },
+                     {
+                            "name": "Self-closing door",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "The door closes swiftly with a loud 'BANG'!",
+                                          "type": "exactMatch"
+                                   }
+                            ],
+                            "script": ""
+                     }
+              ]
+       },
+       {
+              "name": "Door closed",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "yes",
+              "multilineDelta": "2",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You open the door to the",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "",
+                            "type": "prompt"
+                     },
+                     {
+                            "pattern": "^The door to the \\w+ closes with a click\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Failed to open door",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You are not carrying a key for this door.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "This door has been magically locked shut.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "Not recognising you as cast or crew, stagehands firmly close the door on you.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You push against the door in vain as you try to open it.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You do not have access to open this door.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "The door beeps quietly. It appears to be locked.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "This (?:walnut|pine|oak|iron|reinforced) door has been magically locked shut\\.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "You are not carrying a key for this (?:walnut|pine|oak|iron|reinforced) door\\.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "The door has been magically locked shut.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You must have a lockpick in order to attempt to open the exit.",
+                            "type": "substring"
+                     },
+                     {
+                            "pattern": "You need to seek training before being able to pick locks.",
+                            "type": "substring"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Door Locked",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "The door is locked.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "The (?:walnut|pine|oak|iron|reinforced) door is locked\\.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "The door is locked shut.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Door in the way",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "There is a door in the way, to the",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "There is a door in the way.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "A closed door is in the way. You need to OPEN DOOR",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "There is an? (?:walnut|pine|oak|iron|reinforced) door in the way.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "The door to the (\\w+) is closed.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "There is a closed door in the way.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "The (?:gate|door|way) to the \\w+ is closed.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "The \\w+ (?:gate|door) to the \\w+ is closed.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "^The (?:cellar door|manhole) (?:up|down) is closed.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "The \\w+ in that direction is closed.",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       }
+]

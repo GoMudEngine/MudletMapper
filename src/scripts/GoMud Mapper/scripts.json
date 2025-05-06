@@ -1,0 +1,372 @@
+[
+       {
+              "name": "Locating \u0026 echoing functions",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Aliases",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Directions-translating functions",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mconfig settings functions",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "API",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.roomLook",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.ferriesfix",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmapper updated map",
+                     "sysConnectionEvent"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.wormholesfix",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmapper updated map",
+                     "sysMapDownloadEvent"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.clearlastupdate",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmapper updated pdb"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Third-party functions",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.regenerateAreas",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmp areas changed",
+                     "mmapper map reloaded"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.relockAreas",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmapper map reloaded"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Fix setExit",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Fix exit locking funcs",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Assorted small utilities",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Defense tracking",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.centerRoominfo",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "gmcp.Room"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.mapdata_changed",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "sysMapLoad",
+                     "sys2DMapLoad",
+                     "sys3DMapLoad",
+                     "sysMapDownloadEvent",
+                     "mapOpenEvent"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Load settings",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Create Option Table",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.speedwalking",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "RoomNum",
+                     "gmcp.Room.Info"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.wentOutside",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmapper went outside",
+                     "mmapper changed continent"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Utilities",
+              "isActive": "yes",
+              "script": "",
+              "children": [
+                     {
+                            "name": "Locating \u0026 echoing functions",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Aliases",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Directions-translating functions",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mconfig settings functions",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "API",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.roomLook",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.ferriesfix",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "mmapper updated map",
+                                   "sysConnectionEvent"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.wormholesfix",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "mmapper updated map",
+                                   "sysMapDownloadEvent"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.clearlastupdate",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "mmapper updated pdb"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Third-party functions",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.regenerateAreas",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "mmp areas changed",
+                                   "mmapper map reloaded"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.relockAreas",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "mmapper map reloaded"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Fix setExit",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Fix exit locking funcs",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Assorted small utilities",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "Defense tracking",
+                            "isActive": "yes",
+                            "script": "",
+                            "isFolder": "no"
+                     }
+              ],
+              "isFolder": "no"
+       },
+       {
+              "name": "Person tracking",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Lock Area",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "Center view via GMCP",
+              "isActive": "yes",
+              "script": "",
+              "children": [
+                     {
+                            "name": "mmp.centerRoominfo",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "gmcp.Room"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     }
+              ],
+              "isFolder": "no"
+       },
+       {
+              "name": "Initialize",
+              "isActive": "yes",
+              "script": "",
+              "children": [
+                     {
+                            "name": "mmp.mapdata_changed",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "sysMapLoad",
+                                   "sys2DMapLoad",
+                                   "sys3DMapLoad",
+                                   "sysMapDownloadEvent",
+                                   "mapOpenEvent"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     }
+              ],
+              "isFolder": "no"
+       },
+       {
+              "name": "map features",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mm Mapping",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "yes"
+       },
+       {
+              "name": "Game-specific",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "yes"
+       },
+       {
+              "name": "Test / one-time things",
+              "isActive": "yes",
+              "script": "-------------------------------------------------\n--         Put your Lua functions here.        --\n--                                             --\n-- Note that you can also use external Scripts --\n-------------------------------------------------\n",
+              "isFolder": "yes"
+       },
+       {
+              "name": "Check for map updates",
+              "isActive": "yes",
+              "script": "",
+              "isFolder": "yes"
+       }
+]

@@ -1,0 +1,46 @@
+[
+       {
+              "name": "mmp.registerGoMudEnvData",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "mmp logged in"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.goMudStopSpeedwalkForWrongDir",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "gmcp.Room.WrongDir"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "GoMud",
+              "isActive": "yes",
+              "script": "",
+              "children": [
+                     {
+                            "name": "mmp.registerGoMudEnvData",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "mmp logged in"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     },
+                     {
+                            "name": "mmp.goMudStopSpeedwalkForWrongDir",
+                            "isActive": "yes",
+                            "eventHandlerList": [
+                                   "gmcp.Room.WrongDir"
+                            ],
+                            "script": "",
+                            "isFolder": "no"
+                     }
+              ],
+              "isFolder": "no"
+       }
+]

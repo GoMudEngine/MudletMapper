@@ -1,0 +1,11 @@
+[
+       {
+              "name": "mmp.grabEnvid",
+              "isActive": "no",
+              "eventHandlerList": [
+                     "gmcp.Room.Info"
+              ],
+              "script": "",
+              "isFolder": "no"
+       }
+]

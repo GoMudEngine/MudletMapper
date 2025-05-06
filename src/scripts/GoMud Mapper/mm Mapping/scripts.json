@@ -1,0 +1,30 @@
+[
+       {
+              "name": "mmp.mappingNewroom",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "gmcp.Room.Info",
+                     "RoomNum"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.saveOptions",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "sysExitEvent"
+              ],
+              "script": "",
+              "isFolder": "no"
+       },
+       {
+              "name": "mmp.loadOptions",
+              "isActive": "yes",
+              "eventHandlerList": [
+                     "sysLoadEvent"
+              ],
+              "script": "",
+              "isFolder": "no"
+       }
+]
